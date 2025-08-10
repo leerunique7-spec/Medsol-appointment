@@ -1,0 +1,62 @@
+.medsol-off-canvas {
+	position: fixed;
+	top: 0;
+	right: -400px;
+	width: 400px;
+	height: 100%;
+	background: #fff;
+	box-shadow: -2px 0 5px rgba(0,0,0,0.3);
+	transition: right 0.3s;
+	z-index: 9999;
+	display: flex;
+	flex-direction: column;
+}
+
+body.medsol-off-canvas-open .medsol-off-canvas {
+	right: 0;
+}
+
+.medsol-off-canvas-header {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+}
+
+.medsol-off-canvas-body {
+	flex: 1;
+	padding: 10px;
+	overflow-y: auto;
+}
+
+.medsol-off-canvas-footer {
+	padding: 10px;
+	border-top: 1px solid #ddd;
+	text-align: right;
+}
+
+.nav-tab-wrapper {
+	margin-bottom: 10px;
+}
+
+.nav-tab {
+	cursor: pointer;
+}
+
+.day-off-row {
+	margin-bottom: 10px;
+}
+
+.day-off-row input {
+	margin-right: 5px;
+}
+
+#medsol-modal {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	z-index: 9998;
+	display: none;
+	justify-content: flex-end;
+}
